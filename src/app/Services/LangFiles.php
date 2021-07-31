@@ -232,7 +232,7 @@ class LangFiles
     {
         switch (gettype($var)) {
             case 'string':
-                return "'".addcslashes($var, "\\\$'\r\n\t\v\f")."'";
+                return "'".addcslashes($var, "\\\$'\v\f")."'";
             case 'array':
                 $r = [];
                 foreach ($var as $key => $value) {
